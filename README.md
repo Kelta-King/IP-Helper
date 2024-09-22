@@ -1,2 +1,2 @@
-# Tiny-URL
-Repository to generate a tiny URL of long url and access it.
+# IP-Helper
+A small repo which contains the helper functions to check the IPs of the system.
