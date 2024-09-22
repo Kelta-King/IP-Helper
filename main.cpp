@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <sstream>
 #include <cstdlib>
+#include <unistd.h>
 
 using namespace std;
 
@@ -162,10 +163,11 @@ int main() {
     if(dbInstance == nullptr) {
         return 0;
     }
+    sleep(1);
     dbInstance->printDB();
-    dbInstance->updateInternetIp("ip1", true); // Repace ip1 with real ip
+    dbInstance->updateInternetIp("107.109.204.165", true);
     int ret = 0;
-    ret = System::changeIP("ip2"); // Repace ip2 with real ip
+    ret = System::changeIP("107.109.205.155");
     if(ret != 0) {
         cout << "Change IP failed" << endl;
     }
